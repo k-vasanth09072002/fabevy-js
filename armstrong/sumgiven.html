@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sum</title>
+    <title>sum given number</title>
 </head>
 <body>
-    
     <script>
+         const number=prompt("place number");
+          let sum=0;
+          for(let i=1;i<=number;i++){
+     
+            sum +=i;
 
-        const number=prompt("enter a value");
-        let sum=0;
-        for( let i=1;i<=number;i++){
-            sum+=i;
-        }
-        document.write(sum)
+          }
+
+
+          document.write(sum);
     </script>
 </body>
 </html>

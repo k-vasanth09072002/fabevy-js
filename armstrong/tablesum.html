@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sum</title>
+    <title>Table sum</title>
 </head>
 <body>
-    
+
     <script>
 
-        const number=prompt("enter a value");
-        let sum=0;
-        for( let i=1;i<=number;i++){
-            sum+=i;
-        }
-        document.write(sum)
+const number = parseInt(prompt('Enter an integer: '));
+
+for(let i = 1; i <= number; i++) {
+
+    
+    const result = i * number;
+
+    
+    document.write(`${number} * ${i} = ${result}`);
+}
     </script>
+    
 </body>
 </html>
