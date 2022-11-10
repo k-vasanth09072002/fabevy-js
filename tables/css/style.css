@@ -1,0 +1,8 @@
+tr{
+	border:2px solid blue;
+	padding:10px;
+	line-height:50px;
+}
+th{
+	background-color:lightgreen;
+}
