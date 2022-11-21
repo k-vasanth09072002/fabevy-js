@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objectpush</title>
+</head>
+<body>
+    <script>
+        const passangers=[
+            {
+                id:1,
+                passangersname:"freddie mercury",
+                isvegeterianorvegan:false,
+                connect:2,
+
+            },
+
+            {
+                id:2,
+                passangersname:"ganesh",
+                isvegeterianorvegan:true,
+                connect:4,
+
+            },
+            {
+                id:3,
+                passangersname:"rupu",
+                isvegeterianorvegan:true,
+                connect:3,
+
+            },
+
+            {
+                id:4,
+                passangersname:" mercury",
+                isvegeterianorvegan:true,
+                connect:1,
+
+
+            }
+        
+        ]
+        letnewArray=[];
+        passangers.forEach((name) =>{
+
+            let newArray=name.passangersname;
+            name.push(newArray);
+        });
+        console.log(pass);
+
+        
+    
+
+    </script>
+    
+</body>
+</html>
