@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom-element-style</title>
+</head>
+<body>
+    <img src="https://bd.gaadicdn.com/processedimages/yamaha/mt-15-2-0/640X309/mt-15-2-062e4b1493f453.jpg" style="display: none;" id="btn" alt="">
+    
+
+      <button  onclick="Img()">show alart</button>
+    <script>
+        let img=document.getElementById("btn");
+        function Img(){
+            if(img.style.display === 'block'){
+                img.style.display ='none'
+            }else{
+                img.style.display ='block';
+            }
+        }
+    </script>
+    
+</body>
+</html>
