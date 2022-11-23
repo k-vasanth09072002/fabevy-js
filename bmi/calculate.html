@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate</title>
+</head>
+<body>
+    <from>
+        <p>enter your height</p>
+        <input type="number" id="hei" placeholder="height">
+        <p>enter your weight</p>
+        <input type="number" id="wei" placeholder="weight">
+    
+        <button type="button" id="btn" onclick="Fresh()"> click</button>
+  </from> 
+    <script>
+      
+        
+        function Fresh(){
+
+            let height=document.querySelector("#hei").value
+            let weight=document.querySelector("#wei").value
+
+            
+          let result=(weight/((height*height)/10000)).toFixed(2)
+          
+        //   (weight / ((height * height) 
+        //                     / 10000)).toFixed(2);
+
+            console.log(result);
+
+            if(result<18.5){
+                document.write("under weight" + ""+ result);
+            }
+            else if(result>=18.5 && result<= 25.5){
+                document.write("your normal waight" + "" + result)
+            }
+            else{
+                document.write("your over weight" + "" + result)
+            }
+
+        }
+
+        
+
+    </script>
+</body>
+</html>
