@@ -9,13 +9,17 @@
 <body>
 
     <script>
-     
-    for(i=20; i>=1; i--){
-        document.write(i);
-    }
+
+       let i=parseInt(prompt("number"));
+        while(i>0){
+            let rev=(i%10);
+            i=(i-rev)/10;
+            document.write(rev);
+        }
 
 
-   </script>
+
+  </script>
     
 </body>
 </html>

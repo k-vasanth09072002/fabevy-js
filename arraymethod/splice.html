@@ -4,29 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>small number</title>
+    <title>splice</title>
 </head>
 <body>
     <script>
 
-       
 
-         var array = [123,12,15,19,707,199];
-var small=array[0];
+let foods=["saled","sandwich","bread","stea"];
+          let res= foods.splice(2,0,"sikken") 
 
-for (i=0; i<array.length; i++){
-    if (array[i]<small) {
-        small=array[i];
-    }
-}
-
-
-
-
-document.write(small +"small Number");
-
-
-
+          console.log(foods);
 
     </script>
 </body>
