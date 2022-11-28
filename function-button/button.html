@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+</head>
+<body>
+    <input type="text" id="first">
+    <input type="text" id="secound">
+    <p id="p"></p>
+
+    <button id="click"  onclick="number()">click me</button>
+    <button id="clicks" onclick="num()">even</button>
+    <button id="cli" onclick="odd()">odd</button>
+    <button id="c" onclick="asacen()">ascending</button>
+    <button id="cl" onclick="desen()">desenting</button>
+
+
+    <script>  
+
+    function number(){
+
+        let first=document.getElementById("first")
+        let secound=document.getElementById("secound");
+
+        let first1=parseInt(first.value) 
+             let secound1=parseInt(secound.value)
+        
+        for (let i=first1;i<=secound1;i++){
+       var line = document.createElement('p')
+       line.innerHTML = i;
+       document.body.appendChild(line);
+    
+        }
+    }
+
+    
+    function num(){
+
+let first=document.getElementById("first")
+let secound=document.getElementById("secound");
+
+let first1=parseInt(first.value) 
+     let secound1=parseInt(secound.value)
+
+for (let i=first1;i<=secound1;i++){
+    if(i%2==0){
+var line = document.createElement('p')
+line.innerHTML = i;
+document.body.appendChild(line);
+    }
+
+}
+} 
+
+
+function odd(){
+
+let first=document.getElementById("first")
+let secound=document.getElementById("secound");
+
+let first1=parseInt(first.value) 
+     let secound1=parseInt(secound.value)
+
+for (let i=first1;i<=secound1;i++){
+    if(i%2!==0){
+var line = document.createElement('p')
+line.innerHTML = i;
+document.body.appendChild(line);
+    }
+
+}
+} 
+
+
+
+function asacen(){
+
+let first=document.getElementById("first")
+let secound=document.getElementById("secound");
+
+let first1=parseInt(first.value) 
+     let secound1=parseInt(secound.value)
+
+for (let i=first1;i<=secound1;i++){
+var line = document.createElement('p')
+line.innerHTML = i;
+document.body.appendChild(line);
+    }
+
+}
+
+
+
+
+function desen(){
+
+let first=document.getElementById("first")
+let secound=document.getElementById("secound");
+
+let first1=parseInt(first.value) 
+     let secound1=parseInt(secound.value)
+
+for (let i=first1;i<=secound1;i++){
+    if(){
+var line = document.createElement('p')
+line.innerHTML = i;
+document.body.appendChild(line);
+    }
+}
+
+}
+ 
+
+
+
+
+
+
+
+
+    
+
+
+    </script>
+
+</body>
+</html>
