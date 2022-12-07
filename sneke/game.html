@@ -4,39 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Sneke game</title>
+
 </head>
 <body>
     
-    <table>
-        <tr>
-             <button>1</button>
-             <button>2</button>
-             <button>3</button>
-             <button>4</button>
-             <button>5</button>
-             <button>6</button>
-             <button>7</button>
-             <button>8</button>
-             <button>9</button>
-             <button>10</button>
+        <section>
+            <div class="box"></div>
+        </section>
 
-         </tr><br>
 
-         <tr>
-            <button>11</button>
-            <button>22</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>10</button>
 
-        </tr>
-        
-    </table>
+
+
+
+        <script>
+       
+       function games (){
+
+        var games ="";
+        for (let i=0;i<10;i++){
+            for(let j=0;j<10;j++){
+                y=i=50;
+                x=j=50;
+                if(i+j)2==0;
+              {
+                bg="red";
+
+              }
+              else{
+                bg=gray;
+              }
+
+             games+=<div class='box' style='margin:${y}px ${x}px'></div>;
+
+            }
+            document.querySelector("section").innerHTML=games;
+        } 
+
+       }
+        </script>
 </body>
 </html>
